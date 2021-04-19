@@ -1,0 +1,55 @@
+body {
+    background-color: black;
+}
+
+@font-face {
+    font-family: "digital_led";
+    src:url('http://127.0.0.1:8000/static/font/CQ-Mono-1.otf');
+}
+
+p {
+    font-family: "digital_led", sans-serif;
+    color: white;
+}
+
+#time_block {
+    width: 650px;
+    height: 300px;
+    margin:auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: all 1s;
+}
+
+#time_block #time {
+    text-align: center;
+    font-size: 10em;
+    margin-top: 10px;
+    margin-bottom: -30px;
+}
+
+#time_block #bot p{
+    display: inline;
+}
+
+#time_block #date {
+    margin-left: 14px;
+    font-size: 5em;
+}
+
+#time_block #weekday {
+    left: 10px;
+    font-size: 4.5em;
+}
+
+#time_block:active{
+    width: 650px;
+    height: 300px;
+    float: right;
+    margin-right: 5%;
+    margin-top:5%;
+    transition: all 1s;
+}

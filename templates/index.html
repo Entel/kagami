@@ -8,13 +8,35 @@
     <link rel="stylesheet" href="{% static "css/index.css" %}" type="text/css">
 </head>
 <body>
-    <div id='time_block'>
-        <p id='time'></p> 
-        <div id='bot'>
-            <p id='date'></p>
-            <p id='weekday'></p>
+    <div id='right_bag'>
+        <div id='time_block'>
+            <p id='time'>00:00:00</p> 
+            <div id='bot'>
+                <p id='date'>0000/00/00</p>
+                <p id='weekday'>BUG.</p>
+            </div>
+        </div>
+
+        <div id='weather'>
+            <div id='weather_top'>
+                <div id='weather_left'>
+                    <img id='icon' src="{% static "img/weather-icon-S1/bw-256/100.png" %}"/>
+                    <p id='text'>Sunny</p>
+                </div>
+                <div id='weather_right'>
+                    <p id='temp_t' class='msg_txt'>Tempreture</p>
+                    <p id='temp' class='msg_temp'>20&#176;</p>
+                    <p id='feelsLike_t' class='msg_txt'>Feels Like</p>
+                    <p id='feelsLike' class='msg_temp'>21&#176;</p>
+                </div>
+            </div>
+            <div id='weather_mid'>
+                <p id='wind'>West-North L3</p>
+                <p id='humidity'>Humidity: 65%</p>
+            </div>
         </div>
     </div>
 </body>
 <script src="{% static "js/clock.js" %}" type="text/javascript"></script>
+<script src="{% static "js/weather.js" %}" type="text/javascript"></script>
 </html>

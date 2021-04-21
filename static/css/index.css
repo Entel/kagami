@@ -12,6 +12,11 @@ p {
     color: white;
 }
 
+#right_bag {
+    float: right;
+}
+
+/*
 #time_block {
     width: 650px;
     height: 300px;
@@ -44,12 +49,82 @@ p {
     left: 10px;
     font-size: 4.5em;
 }
+*/
 
-#time_block:active{
-    width: 650px;
-    height: 300px;
-    float: right;
-    margin-right: 5%;
-    margin-top:5%;
-    transition: all 1s;
+#time_block {
+    width: 400px;
+    margin-top: 10px;
+}
+
+#time_block #time {
+    text-align: center;
+    font-size: 6em;
+    margin-top: 7px;
+    margin-bottom: -15px;
+}
+
+#time_block #bot p{
+    display: inline;
+}
+
+#time_block #date {
+    margin-left: 10px;
+    font-size: 3.4em;
+}
+
+#time_block #weekday {
+    position: relative;
+    left: 10px;
+    font-size: 3.4em;
+    font-weight: bolder;
+}
+
+#weather {
+    margin-top: 10px;
+    width: 400px;
+}
+
+#weather_top {
+    display: flex;
+}
+
+#weather_left {
+    text-align: center;
+    width: 200px;
+}
+
+#icon {
+    filter: invert(100%);
+    width: 200px;
+}
+
+#text {
+    font-size: 3em;
+    margin-top: -20px;
+    margin-bottom: 10px;
+}
+
+#weather_right {
+    width: 200px;
+    margin-top: 20px;
+    margin-left:10px;
+}
+
+#weather_right .msg_txt {
+    font-size: 1.3em;
+    margin-bottom: 3px;
+}
+
+#weather_right .msg_temp {
+    font-size: 3em;
+    text-align: center;
+    margin-top: 7px;
+    margin-bottom: 10px;
+}
+
+#weather_mid p {
+    text-align: center;
+    font-size: 2em;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }

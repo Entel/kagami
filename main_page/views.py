@@ -24,7 +24,20 @@ def weather(request):
         location = [addr['lat'], addr['lon']]
         weather_res = query_weather(location)
         #print(weather_res['now'])
-        
+
+        #wind direction process        
+        wind_dir = weather_res['now']['windDir']
+        new_wind_dir = ''
+        for item in wind_dir:
+            if item == 'E':
+                new_wind_dir += 'East '
+            if item == 'W':
+                new_wind_dir += 'West '
+            if item == 'N':
+                new_wind_dir += 'North '
+            if item == 'S':
+                new_wind_dir += 'South '
+
         json_res = {
             "ip": ip,
             "locate": addr['city'],
@@ -34,7 +47,7 @@ def weather(request):
             "feelsLike": weather_res['now']['feelsLike'],
             "icon": weather_res['now']['icon'],
             "text": weather_res['now']['text'],
-            "windDir": weather_res['now']['windDir'],
+            "windDir": new_wind_dir,
             "windScale": weather_res['now']['windScale'],
             "humidity": weather_res['now']['humidity']
         }

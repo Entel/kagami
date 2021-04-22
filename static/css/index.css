@@ -4,7 +4,7 @@ body {
 
 @font-face {
     font-family: "digital_led";
-    src:url('http://127.0.0.1:8000/static/font/CQ-Mono-1.otf');
+    src:url('/static/font/CQ-Mono-1.otf');
 }
 
 p {
@@ -53,7 +53,7 @@ p {
 
 #time_block {
     width: 400px;
-    margin-top: 10px;
+    margin-top: 50px;
 }
 
 #time_block #time {
@@ -80,7 +80,7 @@ p {
 }
 
 #weather {
-    margin-top: 10px;
+    margin-top: 50px;
     width: 400px;
 }
 
@@ -127,4 +127,26 @@ p {
     font-size: 2em;
     margin-top: 5px;
     margin-bottom: 5px;
+}
+
+.pred_block {
+    width: 75px;
+    text-align: center;
+    font-size: 1em;
+}
+
+.pred_icon {
+    width: 70px;
+    filter: invert(100%);
+}
+
+.pred_temp {
+    margin-top: -5px;
+    margin-bottom: 2px;
+}
+
+td, tr {
+    border: 3px;
+    border-color: #cccccc;
+    
 }

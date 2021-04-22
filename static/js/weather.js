@@ -8,7 +8,7 @@ function getweather(){
             //console.log(obj);
             $("#icon").attr("src", "/static/img/weather-icon-S1/bw-256/" + obj.icon + ".png");
             $("#text").html(obj.text);
-            $('#temp').html(obj.temp);
+            $('#temp').html(obj.temp + '&#176');
             $('#feelsLike').html(obj.feelsLike);
             $('#wind').html(obj.windDir + " L" + obj.windScale);
             $('#humidity').html("Humidity: " + obj.humidity);
